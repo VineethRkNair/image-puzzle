@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".grid-container div").click(function () {
+                debugger
+                $(this).toggleClass('hide');
+            });
+        });
+    </script>
+    <style>
+        .grid-container {
+            display: table;
+            position: absolute;
+            z-index: 1;
+            top: 38px;
+            height: 500px;
+            width: 500px;
+            left: 31.6%;
+        }
+
+        .grid-container>div {
+            background-color:#0b1761;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 90px;
+            display: inline-table;
+            width: 144px;
+            padding: 10px;
+            cursor: pointer;
+            color:#fff;
+        }
+        .grid-container>div.hide {background: transparent;color: transparent;}
+        .image-section {
+            max-width: 500px;
+            margin: 38px auto;
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image-section">
+        <img src="https://yt3.ggpht.com/a/AATXAJwYCTRYGhDppqY0uvl3F9w2aQA8ivi70I4grA=s900-c-k-c0xffffffff-no-rj-mo"
+            alt="sachin">
+    </div>
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+
+</html>
